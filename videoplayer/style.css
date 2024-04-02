@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.videoscreen{
+    width: 90%;
+    cursor: pointer;
+}
+
+.controls{
+    width: 90%;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ctrl-btn{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    
+    margin: 0 5px;
+
+    cursor: pointer;
+
+}
+
+/* .progress{
+    width: 60%;
+
+    margin-right:10px ;
+} */
+
+/* For Progress  */
+.progress-container{
+    width: 90%;
+    height: 5px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.progress{
+    width: 0;
+    height: 100%;
+    background-color: steelblue;
+    border: 5px;
+    transition: width .1s linear;
+}
+
+.ctrl-btn .fa-play{
+    color: steelblue;
+}
+
+.ctrl-btn .fa-stop{
+    color: tomato;
+}
+
+
+.closefullscreen{
+    display: none;
+}
+
+.displaytime{
+    margin-left: 10px;
+}
+
+.pannel{
+    background-color: steelblue;
+    color: #fff;
+    padding: 0 30px;
+
+    position: absolute;
+    left: 31%;
+    top: 60%;
+
+    z-index: -1;
+    transition: top .5s ease-out;
+}
+
+
+.container:hover .pannel{
+    top: 76%;
+}
+
+
